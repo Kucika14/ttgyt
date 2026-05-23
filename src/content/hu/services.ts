@@ -1,14 +1,14 @@
 /** Szolgáltatások oldal hero szövegek. */
 export const servicesPage = {
-  heading: "Szolgáltatásaink",
+  heading: "Kezelési területeink",
   description:
-    "Minden megbízásunk mögött egy elkötelezett szakértői csapat áll. Válasszon az alábbi szolgáltatásaink közül, vagy keressen minket személyre szabott ajánlatért.",
+    "Minden kezelés egyéni állapotfelméréssel kezdődik. Az első konzultáción közösen meghatározzuk a leghatékonyabb terápiás utat az Ön céljaihoz és panaszaihoz.",
 } as const;
 
 /** Szolgáltatások lista szekció. */
 export const servicesList = {
-  heading: "Minden szolgáltatásunk",
+  heading: "Összes kezelési terület",
   description:
-    "Ismerje meg részletesen, hogyan tudunk hozzájárulni vállalkozása fejlődéséhez és a hosszú távú sikerhez.",
-  listAriaLabel: "Szolgáltatások listája",
+    "Ismerje meg részletesen, miben segíthetünk – a gerinc terápiától a neurológiai rehabilitációig.",
+  listAriaLabel: "Kezelési területek listája",
 } as const;

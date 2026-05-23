@@ -8,69 +8,69 @@ import type { Service } from "@/types/service";
 export const services: Service[] = [
   {
     id: "1",
-    slug: "uzleti-tanacsadas",
-    title: "Üzleti tanácsadás",
+    slug: "gerinc-terapia",
+    title: "Gerinc terápia",
     shortDescription:
-      "Stratégiai útmutatás és személyre szabott tanácsadás vállalkozása növekedéséhez és hatékonyságának javításához.",
+      "Hát- és nyaki panaszok, porckorongproblémák és gerincelváltozások kezelése célzott gyógytornával.",
     methodologySummary:
-      "Részletes helyzetfelmérést követően közösen azonosítjuk a fejlesztési lehetőségeket, majd mérhető célokat és konkrét cselekvési tervet dolgozunk ki. Az eredményeket rendszeres visszacsatolással követjük nyomon.",
-    iconAlt: "Üzleti tanácsadás ikon",
-    imageSrc: "https://placehold.co/600x400/dbeafe/1e40af?text=Üzleti+tanácsadás",
+      "Részletes mozgásvizsgálatot követően egyéni kezelési tervet állítunk össze. A terápia manuális technikákat, mobilizációs és stabilizációs gyakorlatokat ötvöz a tartós javulás érdekében.",
+    iconAlt: "Gerinc terápia illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Gerinc+terápia",
   },
   {
     id: "2",
-    slug: "folyamatoptimalizalas",
-    title: "Folyamatoptimalizálás",
+    slug: "sportrehabilitacio",
+    title: "Sportrehabilitáció",
     shortDescription:
-      "Üzleti folyamatainak feltérképezése és újratervezése a hatékonyság növelése, a felesleges lépések kiiktatása és a költségek csökkentése érdekében.",
+      "Szalag-, ín- és izomproblémák, sportos sérülések utáni biztonságos és gyors visszatérés az aktív élethez.",
     methodologySummary:
-      "A meglévő munkafolyamatok feltérképezésével és értékelésével kezdünk, azonosítjuk a szűk keresztmetszeteket, majd lean és agile elvek alapján javaslatokat dolgozunk ki a fejlesztésre.",
-    iconAlt: "Folyamatoptimalizálás ikon",
-    imageSrc: "https://placehold.co/600x400/dbeafe/1e40af?text=Folyamatoptimalizálás",
+      "A sérülés jellegéhez igazított, fokozatos program az erő, rugalmasság és propriocepció visszaállítására összpontosít, hogy a sporthoz a lehető leghamarabb és legbiztonságosabban visszatérhessen.",
+    iconAlt: "Sportrehabilitáció illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Sportrehabilitáció",
   },
   {
     id: "3",
-    slug: "projektmenedzsment",
-    title: "Projektmenedzsment",
+    slug: "manualterapia",
+    title: "Manuálterápia",
     shortDescription:
-      "Komplex projektek tervezése, koordinálása és felügyelete – a kezdeti ötlettől az eredményes megvalósításig.",
+      "Ízületi blokádok, mozgáskorlátozottságok és izomfeszültségek feloldása speciális kézi technikákkal.",
     methodologySummary:
-      "Strukturált projektterv elkészítésével, felelősök kijelölésével és mérföldkövek meghatározásával biztosítjuk az időben és költségkereten belüli teljesítést. Rendszeres státuszjelentésekkel tartjuk naprakészen az érintetteket.",
-    iconAlt: "Projektmenedzsment ikon",
-    imageSrc: "https://placehold.co/600x400/dbeafe/1e40af?text=Projektmenedzsment",
+      "Célzott kézi fogások segítségével oldjuk fel az ízületi blokádokat és csökkentjük a fájdalmat. A kezelés javítja az ízületi mozgásterjedelmet és helyreállítja a normális mozgásmintát.",
+    iconAlt: "Manuálterápia illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Manuálterápia",
   },
   {
     id: "4",
-    slug: "valtozasmenedzsment",
-    title: "Változásmenedzsment",
+    slug: "posztoperativ-rehabilitacio",
+    title: "Posztoperatív rehabilitáció",
     shortDescription:
-      "Szervezeti változások sikeres vezetése – az ellenállás kezelésétől az új megoldások elfogadtatásáig.",
+      "Műtétet követő gyógyulás gyorsítása és a teljes mozgásfunkció visszaállítása szakszerű gyógytornával.",
     methodologySummary:
-      "Az érintett csoportok bevonásával, kommunikációs stratégia kialakításával és képzési programok tervezésével segítünk abban, hogy a szervezeti átalakulás zökkenőmentesen és tartósan valósuljon meg.",
-    iconAlt: "Változásmenedzsment ikon",
-    imageSrc: "https://placehold.co/600x400/dbeafe/1e40af?text=Változásmenedzsment",
+      "Az operáló orvossal szorosan együttműködve, a sebészeti protokollt figyelembe véve tervezzük meg a rehabilitációs folyamatot. Célunk a mielőbbi, biztonságos és teljes funkcióvisszaállás.",
+    iconAlt: "Posztoperatív rehabilitáció illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Posztoperatív+rehab",
   },
   {
     id: "5",
-    slug: "hr-tanacsadas",
-    title: "HR tanácsadás",
+    slug: "neurologiai-rehabilitacio",
+    title: "Neurológiai rehabilitáció",
     shortDescription:
-      "Toborzási folyamatok fejlesztése, teljesítményértékelési rendszerek kialakítása és munkavállalói elköteleződés növelése.",
+      "Stroke, Parkinson-kór vagy idegrendszeri sérülés utáni mozgásterápia és funkcióvisszaállítás.",
     methodologySummary:
-      "Az igényfelmérést követően személyre szabott HR-megoldásokat dolgozunk ki: a munkaköri leírásoktól a beillesztési programokon át az éves értékelési keretrendszerig minden területen támogatjuk a szervezetet.",
-    iconAlt: "HR tanácsadás ikon",
-    imageSrc: "https://placehold.co/600x400/dbeafe/1e40af?text=HR+tanácsadás",
+      "Az idegrendszer plaszticitására épülő komplex mozgásterápia segít a mozgásfunkció, az egyensúly és a koordináció visszaállításában. A terápiát az egyéni képességekhez és célokhoz igazítjuk.",
+    iconAlt: "Neurológiai rehabilitáció illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Neurológiai+rehab",
   },
   {
     id: "6",
-    slug: "strategiai-tervezes",
-    title: "Stratégiai tervezés",
+    slug: "artozis-terapia",
+    title: "Artrózisos ízületek kezelése",
     shortDescription:
-      "Hosszú távú vállalati stratégia kidolgozása a piaci trendek, versenykörnyezet és belső erőforrások elemzése alapján.",
+      "Térd-, csípő- és vállízületi kopás konzervatív kezelése a fájdalom csökkentése és a mozgásképesség megőrzése érdekében.",
     methodologySummary:
-      "SWOT-analízissel és piackutatással megalapozva, a vezetői csapattal közösen alkotjuk meg a 3–5 éves stratégiai irányvonalat, amelyet éves operatív tervekre bontunk le a megvalósíthatóság érdekében.",
-    iconAlt: "Stratégiai tervezés ikon",
-    imageSrc: "https://placehold.co/600x400/dbeafe/1e40af?text=Stratégiai+tervezés",
+      "Egyéni terhelési program kidolgozásával erősítjük az ízületet körülvevő izmokat, csökkentjük a mechanikai terhelést és lassítjuk a kopást. A cél a fájdalommentes, aktív mindennapi élet.",
+    iconAlt: "Artrózisos ízületek kezelése illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Artrózisos+ízületek",
   },
 ];
 

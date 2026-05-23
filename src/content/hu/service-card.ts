@@ -1,4 +1,4 @@
 /** ServiceCard komponens UI feliratok. */
 export const serviceCard = {
-  methodologyLabel: "Módszertanunk",
+  methodologyLabel: "Terápiás megközelítés",
 } as const;

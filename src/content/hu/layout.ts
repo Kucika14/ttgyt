@@ -8,7 +8,7 @@ export const skipLink = {
 /** Lábléc szövegek (a navigációs linkeket a navigation.ts tartalmazza). */
 export const footer = {
   brand: "TTGYT",
-  tagline: "Professzionális megoldások az Ön vállalkozása számára.",
+  tagline: "Személyre szabott gyógytorna az egészségéért és mozgásszabadságáért.",
   navAriaLabel: "Lábléc navigáció",
   contactTitle: "Elérhetőség",
   contact: contactInfo,

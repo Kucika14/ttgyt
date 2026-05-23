@@ -2,26 +2,26 @@ import { contactInfo } from "./contact-info";
 
 /** Főoldal — Hero szekció. */
 export const hero = {
-  heading: "Professzionális megoldások az Ön sikeréért",
+  heading: "Visszanyert mozgásszabadság az Ön egészségéért",
   description:
-    "A TTGYT elkötelezett vállalkozása fejlődése mellett. Tapasztalt szakértőink stratégiai tanácsadással, folyamatoptimalizálással és személyre szabott megoldásokkal segítik céljainak elérését.",
-  ctaPrimary: "Fedezze fel szolgáltatásainkat",
-  ctaSecondary: "Kapcsolatfelvétel",
+    "Gyógytornász szakemberként célom, hogy személyre szabott kezeléseimmel segítsem pácienseimet a fájdalommentes, aktív élethez való visszatérésben. Minden kezelés egyéni állapotfelmérésre épül.",
+  ctaPrimary: "Ismerje meg kezeléseinket",
+  ctaSecondary: "Időpont foglalás",
 } as const;
 
 /** Főoldal — Kiemelt szolgáltatások szekció. */
 export const highlightedServices = {
-  heading: "Kiemelt szolgáltatásaink",
-  description: "Átfogó megoldásaink segítségével vállalkozása minden területén számíthat ránk.",
-  listAriaLabel: "Kiemelt szolgáltatások",
-  ctaButton: "Összes szolgáltatás megtekintése",
+  heading: "Kiemelt kezelési területeink",
+  description: "Mozgásszervi panaszoktól a sportrehabilitációig – átfogó gyógytornász ellátás az egészségéért.",
+  listAriaLabel: "Kiemelt kezelési területek",
+  ctaButton: "Összes kezelési terület",
 } as const;
 
 /** Főoldal — Kapcsolat szekció. */
 export const contactSection = {
-  heading: "Vegye fel velünk a kapcsolatot",
+  heading: "Foglaljon időpontot!",
   description:
-    "Kérdése van, vagy személyes konzultációt szeretne? Keressen minket az alábbi elérhetőségeken!",
+    "Kérdése van, vagy időpontot szeretne foglalni? Keressen minket az alábbi elérhetőségeken – örömmel segítünk!",
   emailLabel: "E-mail",
   phoneLabel: "Telefon",
   addressLabel: "Cím",

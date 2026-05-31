@@ -5,7 +5,7 @@ export const hero = {
   heading: "Visszanyert mozgásszabadság az Ön egészségéért",
   description:
     "Gyógytornász szakemberként célom, hogy személyre szabott kezeléseimmel segítsem pácienseimet a fájdalommentes, aktív élethez való visszatérésben. Minden kezelés egyéni állapotfelmérésre épül.",
-  ctaPrimary: "Ismerje meg kezeléseinket",
+  ctaPrimary: "Kezelések",
   ctaSecondary: "Időpont foglalás",
 } as const;
 

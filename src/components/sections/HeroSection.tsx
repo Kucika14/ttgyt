@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section
       aria-label="Hero"
-      className="relative overflow-hidden bg-muted"
+      className="relative overflow-hidden bg-[oklch(0.95_0.04_196)]"
     >
       {/* Background image */}
       <div className="absolute inset-0 -z-10" aria-hidden="true">

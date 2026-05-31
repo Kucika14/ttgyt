@@ -8,7 +8,7 @@ export function ContactSection() {
     <SectionWrapper
       id="contact"
       aria-label="Elérhetőség"
-      className="mx-auto w-full max-w-6xl bg-muted px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
+      className="mx-auto w-full max-w-6xl bg-[oklch(0.95_0.04_196)] px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
       <address className="mx-auto mt-12 grid max-w-3xl gap-8 not-italic sm:grid-cols-3">
         <div className="flex flex-col items-center gap-2 text-center">
@@ -50,7 +50,7 @@ export function ContactSection() {
           title="Rendelő helyszíne – Google Maps"
           src={contact.mapsEmbedSrc}
           width="100%"
-          height="360"
+          height="500"
           style={{ border: 0, display: "block" }}
           allowFullScreen
           loading="lazy"

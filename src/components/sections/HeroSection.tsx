@@ -6,7 +6,7 @@ import { hero } from "@/content";
 export function HeroSection() {
   return (
     <section
-      aria-labelledby="hero-heading"
+      aria-label="Hero"
       className="relative overflow-hidden bg-muted"
     >
       {/* Background image */}
@@ -23,13 +23,7 @@ export function HeroSection() {
 
       <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="max-w-2xl">
-          <h1
-            id="hero-heading"
-            className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl"
-          >
-            {hero.heading}
-          </h1>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+          <p className="text-lg leading-relaxed text-muted-foreground">
             {hero.description}
           </p>
           <div className="mt-10 flex flex-wrap gap-4">

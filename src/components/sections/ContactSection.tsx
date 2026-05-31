@@ -7,19 +7,9 @@ export function ContactSection() {
   return (
     <SectionWrapper
       id="contact"
-      aria-labelledby="contact-heading"
+      aria-label="Elérhetőség"
       className="mx-auto w-full max-w-6xl bg-muted px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
     >
-      <div className="mx-auto max-w-2xl text-center">
-        <h2
-          id="contact-heading"
-          className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl"
-        >
-          {contactSection.heading}
-        </h2>
-        <p className="mt-4 text-base text-muted-foreground">{contactSection.description}</p>
-      </div>
-
       <address className="mx-auto mt-12 grid max-w-3xl gap-8 not-italic sm:grid-cols-3">
         <div className="flex flex-col items-center gap-2 text-center">
           <span className="text-sm font-semibold uppercase tracking-wide text-primary">

@@ -4,9 +4,14 @@
  * Csak itt kell módosítani, ha az elérhetőségek változnak.
  */
 export const contactInfo = {
-  email: "info@ttgyt.hu",
-  emailHref: "mailto:info@ttgyt.hu",
-  phone: "+36 30 123 4567",
-  phoneHref: "tel:+36301234567",
-  address: "1234 Budapest, Példa utca 1.",
+  email: "tilly.tamas@gmail.com",
+  emailHref: "mailto:tilly.tamas@gmail.com",
+  phone: "+36 30 294 3566",
+  phoneHref: "tel:+36302943566",
+  address: "2030 Érd, Budai út 6.",
+  addressNote: "Form Pilates stúdió",
+  mapsEmbedSrc:
+    "https://maps.google.com/maps?q=2030+%C3%89rd%2C+Budai+%C3%BAt+6&t=&z=15&ie=UTF8&iwloc=&output=embed",
+  streetViewHref:
+    "https://www.google.com/maps?q=2030+%C3%89rd,+Budai+%C3%BAt+6&layer=c",
 } as const;

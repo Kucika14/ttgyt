@@ -17,6 +17,15 @@ export const highlightedServices = {
   ctaButton: "Összes kezelési terület",
 } as const;
 
+/** Főoldal — Árak szekció. */
+export const pricingSection = {
+  heading: "Árak",
+  items: [
+    { duration: "45 perc", price: "15 000 Ft" },
+  ],
+  note: "Házi kezelés esetén az útiköltséget külön számítom fel.",
+} as const;
+
 /** Főoldal — Kapcsolat szekció. */
 export const contactSection = {
   heading: "Foglaljon időpontot!",

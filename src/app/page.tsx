@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { HeroSection } from "@/components/sections/HeroSection";
 import { HighlightedServicesSection } from "@/components/sections/HighlightedServicesSection";
+import { PricingSection } from "@/components/sections/PricingSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { buildMetadata } from "@/lib/metadata";
 import { homeMetaContent } from "@/content";
@@ -20,6 +21,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <HighlightedServicesSection />
+      <PricingSection />
       <ContactSection />
     </>
   );

@@ -50,8 +50,33 @@ export function ContactSection() {
             {contactSection.addressLabel}
           </span>
           <p className="text-sm text-foreground">{contact.address}</p>
+          <p className="text-xs text-muted-foreground">{contact.addressNote}</p>
         </div>
       </address>
+
+      {/* Térkép */}
+      <div className="mx-auto mt-12 max-w-4xl overflow-hidden rounded-xl border border-border">
+        <iframe
+          title="Rendelő helyszíne – Google Maps"
+          src={contact.mapsEmbedSrc}
+          width="100%"
+          height="360"
+          style={{ border: 0, display: "block" }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
+      <div className="mt-4 text-center">
+        <a
+          href={contact.streetViewHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm font-medium text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
+        >
+          Utcakép megtekintése (Street View) →
+        </a>
+      </div>
     </SectionWrapper>
   );
 }

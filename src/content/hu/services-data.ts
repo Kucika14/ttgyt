@@ -1,76 +1,49 @@
 import type { Service } from "@/types/service";
 
-/**
- * Statikus szolgáltatás adatok.
- * Jövőbeli CMS integráció esetén ez a tömb helyettesíthető
- * egy API/fetch hívással a lib/services-data.ts-ben.
- */
 export const services: Service[] = [
   {
     id: "1",
-    slug: "gerinc-terapia",
-    title: "Gerinc terápia",
+    slug: "mckenzie-modszer",
+    title: "Mechanikai Diagnózis és Terápia (McKenzie módszer)",
     shortDescription:
-      "Hát- és nyaki panaszok, porckorongproblémák és gerincelváltozások kezelése célzott gyógytornával.",
+      "Gerinc- és végtagízületi panaszok, derékfájdalom, gerincsérv és ínfájdalmak vizsgálata és kezelése az evidence-based McKenzie módszerrel.",
     methodologySummary:
-      "Részletes mozgásvizsgálatot követően egyéni kezelési tervet állítunk össze. A terápia manuális technikákat, mobilizációs és stabilizációs gyakorlatokat ötvöz a tartós javulás érdekében.",
-    iconAlt: "Gerinc terápia illusztráció",
-    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Gerinc+terápia",
+      "A páciens alapos kikérdezése után a panaszok különböző terhelési stratégiákra adott reakcióit térképezzük fel, és ez alapján állítjuk össze az egyéni kezelési protokollt és tornagyakorlatokat. A módszer az önkezelésre buzdítja a pácienst, csökkentve a terapeutától való függést.",
+    iconAlt: "McKenzie módszer illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=McKenzie+módszer",
   },
   {
     id: "2",
-    slug: "sportrehabilitacio",
-    title: "Sportrehabilitáció",
+    slug: "mulligan-manualterapia",
+    title: "Mulligan manuálterápia",
     shortDescription:
-      "Szalag-, ín- és izomproblémák, sportos sérülések utáni biztonságos és gyors visszatérés az aktív élethez.",
+      "Mechanikai ízületi problémák – fájdalmak és mozgásbeszűkülés – kezelése a passzív manuális és aktív torna határán álló Mulligan koncepcióval.",
     methodologySummary:
-      "A sérülés jellegéhez igazított, fokozatos program az erő, rugalmasság és propriocepció visszaállítására összpontosít, hogy a sporthoz a lehető leghamarabb és legbiztonságosabban visszatérhessen.",
-    iconAlt: "Sportrehabilitáció illusztráció",
-    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Sportrehabilitáció",
+      "A terapeuta által létrehozott manuális korrekció alatt a páciens aktív gyakorlatokat végez. A helyesen kivitelezett technikákkal fájdalmatlanná tehetők blokkolt ízületi mozgások. A Mulligan koncepció a tudományos bizonyítékok legszélesebb körével rendelkező gyógytornász módszer – 370-nél is több publikáció vizsgálja hatékonyságát.",
+    iconAlt: "Mulligan manuálterápia illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Mulligan+terápia",
   },
   {
     id: "3",
-    slug: "manualterapia",
-    title: "Manuálterápia",
+    slug: "lagyrész-manualterapia",
+    title: "Lágyrész manuálterápiás kezelések",
     shortDescription:
-      "Ízületi blokádok, mozgáskorlátozottságok és izomfeszültségek feloldása speciális kézi technikákkal.",
+      "Feszes, kötött izmok és ínfájdalmak kezelése a bőrön, kötőszöveteken és izmokon végzett speciális manuális technikákkal.",
     methodologySummary:
-      "Célzott kézi fogások segítségével oldjuk fel az ízületi blokádokat és csökkentjük a fájdalmat. A kezelés javítja az ízületi mozgásterjedelmet és helyreállítja a normális mozgásmintát.",
-    iconAlt: "Manuálterápia illusztráció",
-    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Manuálterápia",
+      "Az izmok és inak mechanikai receptorainak ingerküszöb-emelésével a feszesség és fájdalom jelentősen csökkenthető. A manuális kezelés hatékony fájdalomcsillapító eszköz mellékhatásprofil nélkül, amely képessé teszi a pácienst az aktív tornára.",
+    iconAlt: "Lágyrész manuálterápia illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Lágyrész+terápia",
   },
   {
     id: "4",
-    slug: "posztoperativ-rehabilitacio",
-    title: "Posztoperatív rehabilitáció",
+    slug: "seruleses-rehabilitacio",
+    title: "Sérülések, műtétek utáni rehabilitáció",
     shortDescription:
-      "Műtétet követő gyógyulás gyorsítása és a teljes mozgásfunkció visszaállítása szakszerű gyógytornával.",
+      "Tervezett műtétek és traumás sérülések utáni teljes funkcióvisszaállítás: ízületi mozgáspálya, fizikai terhelhetőség és életminőség helyreállítása.",
     methodologySummary:
-      "Az operáló orvossal szorosan együttműködve, a sebészeti protokollt figyelembe véve tervezzük meg a rehabilitációs folyamatot. Célunk a mielőbbi, biztonságos és teljes funkcióvisszaállás.",
-    iconAlt: "Posztoperatív rehabilitáció illusztráció",
-    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Posztoperatív+rehab",
-  },
-  {
-    id: "5",
-    slug: "neurologiai-rehabilitacio",
-    title: "Neurológiai rehabilitáció",
-    shortDescription:
-      "Stroke, Parkinson-kór vagy idegrendszeri sérülés utáni mozgásterápia és funkcióvisszaállítás.",
-    methodologySummary:
-      "Az idegrendszer plaszticitására épülő komplex mozgásterápia segít a mozgásfunkció, az egyensúly és a koordináció visszaállításában. A terápiát az egyéni képességekhez és célokhoz igazítjuk.",
-    iconAlt: "Neurológiai rehabilitáció illusztráció",
-    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Neurológiai+rehab",
-  },
-  {
-    id: "6",
-    slug: "artozis-terapia",
-    title: "Artrózisos ízületek kezelése",
-    shortDescription:
-      "Térd-, csípő- és vállízületi kopás konzervatív kezelése a fájdalom csökkentése és a mozgásképesség megőrzése érdekében.",
-    methodologySummary:
-      "Egyéni terhelési program kidolgozásával erősítjük az ízületet körülvevő izmokat, csökkentjük a mechanikai terhelést és lassítjuk a kopást. A cél a fájdalommentes, aktív mindennapi élet.",
-    iconAlt: "Artrózisos ízületek kezelése illusztráció",
-    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Artrózisos+ízületek",
+      "Az egyéni panaszokat, mozgásbeli hiányosságokat és regenerációs sebességet figyelembe véve tervezett rehabilitációs program célja a funkció tartós és teljes helyreállítása. Az ízületi mozgáspálya és fizikai terhelhetőség nem áll helyre magától – szakszerű gyógytorna szükséges.",
+    iconAlt: "Rehabilitáció illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Rehabilitáció",
   },
 ];
 

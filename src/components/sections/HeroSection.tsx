@@ -27,7 +27,7 @@ export function HeroSection() {
           </div>
 
           {/* Profile image */}
-          <div className="w-64 shrink-0 overflow-hidden rounded-2xl shadow-md lg:w-80">
+          <div className="w-[168px] shrink-0 overflow-hidden rounded-2xl shadow-md lg:w-[218px]">
             <Image
               src="/tilly_tamas.jpg"
               alt="Tilly Tamás gyógytornász"

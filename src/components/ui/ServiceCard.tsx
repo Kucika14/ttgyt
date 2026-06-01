@@ -1,5 +1,4 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import type { Service } from "@/types/service";
 
 interface ServiceCardProps {
@@ -18,16 +17,7 @@ export function ServiceCard({
   const paragraphs = service.methodologySummary.split("\n\n");
 
   return (
-    <Card className="flex h-full flex-col overflow-hidden">
-      <div className="overflow-hidden">
-        <PlaceholderImage
-          src={service.imageSrc}
-          alt={service.iconAlt}
-          width={600}
-          height={300}
-          className="w-full transition-transform duration-300 motion-safe:hover:scale-105"
-        />
-      </div>
+    <Card className="flex h-full flex-col">
       <CardHeader>
         <Heading className="text-lg font-semibold leading-snug">{service.title}</Heading>
       </CardHeader>

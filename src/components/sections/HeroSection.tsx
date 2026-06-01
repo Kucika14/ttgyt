@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { hero } from "@/content";
 
 export function HeroSection() {
@@ -9,30 +9,33 @@ export function HeroSection() {
       aria-label="Hero"
       className="relative overflow-hidden bg-[oklch(0.95_0.04_196)]"
     >
-      {/* Background image */}
-      <div className="absolute inset-0 -z-10" aria-hidden="true">
-        <PlaceholderImage
-          src="https://placehold.co/1920x800/dbeafe/1e40af?text=+"
-          alt=""
-          width={1920}
-          height={800}
-          className="h-full w-full object-cover opacity-20"
-          priority
-        />
-      </div>
-
       <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="max-w-2xl">
-          <p className="text-lg leading-relaxed text-muted-foreground">
-            {hero.description}
-          </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button asChild size="lg">
-              <Link href="/services">{hero.ctaPrimary}</Link>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href="/#contact">{hero.ctaSecondary}</Link>
-            </Button>
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-center">
+          {/* Text */}
+          <div className="max-w-2xl flex-1">
+            <p className="text-lg leading-relaxed text-muted-foreground">
+              {hero.description}
+            </p>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Button asChild size="lg">
+                <Link href="/services">{hero.ctaPrimary}</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
+                <Link href="/#contact">{hero.ctaSecondary}</Link>
+              </Button>
+            </div>
+          </div>
+
+          {/* Profile image */}
+          <div className="w-64 shrink-0 overflow-hidden rounded-2xl shadow-md lg:w-80">
+            <Image
+              src="/tilly_tamas.jpg"
+              alt="Tilly Tamás gyógytornász"
+              width={400}
+              height={500}
+              className="h-full w-full object-cover"
+              priority
+            />
           </div>
         </div>
       </div>

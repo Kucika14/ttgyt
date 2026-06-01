@@ -22,7 +22,7 @@ export function ServicesListSection() {
       >
         {services.map((service) => (
           <li key={service.id} className="flex">
-            <ServiceCard service={service} headingLevel="h3" showMethodology />
+            <ServiceCard service={service} headingLevel="h3" methodologyVariant="full" />
           </li>
         ))}
       </ul>

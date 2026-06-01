@@ -1,20 +1,22 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import type { Service } from "@/types/service";
-import { serviceCard } from "@/content";
 
 interface ServiceCardProps {
   service: Service;
   /** Heading level for the service title — h2 on the services page, h3 in lists */
   headingLevel?: "h2" | "h3";
-  showMethodology?: boolean;
+  /** Controls how the methodology text is rendered */
+  methodologyVariant?: "hidden" | "truncated" | "full";
 }
 
 export function ServiceCard({
   service,
   headingLevel: Heading = "h3",
-  showMethodology = true,
+  methodologyVariant = "full",
 }: ServiceCardProps) {
+  const paragraphs = service.methodologySummary.split("\n\n");
+
   return (
     <Card className="flex h-full flex-col overflow-hidden">
       <div className="overflow-hidden">
@@ -29,17 +31,21 @@ export function ServiceCard({
       <CardHeader>
         <Heading className="text-lg font-semibold leading-snug">{service.title}</Heading>
       </CardHeader>
-      <CardContent className="flex flex-1 flex-col gap-3">
-        <p className="text-sm text-muted-foreground">{service.shortDescription}</p>
-        {showMethodology && (
-          <div>
-            <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-primary">
-              {serviceCard.methodologyLabel}
+      {methodologyVariant !== "hidden" && (
+        <CardContent className="flex flex-1 flex-col">
+          {methodologyVariant === "truncated" ? (
+            <p className="line-clamp-4 text-sm text-muted-foreground">
+              {paragraphs[0]}
             </p>
-            <p className="text-sm text-muted-foreground">{service.methodologySummary}</p>
-          </div>
-        )}
-      </CardContent>
+          ) : (
+            <div className="space-y-2">
+              {paragraphs.map((para, i) => (
+                <p key={i} className="text-sm text-muted-foreground">{para}</p>
+              ))}
+            </div>
+          )}
+        </CardContent>
+      )}
     </Card>
   );
 }

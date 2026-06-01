@@ -26,7 +26,7 @@ export function HighlightedServicesSection() {
       >
         {featuredServices.map((service) => (
           <li key={service.id} className="flex">
-            <ServiceCard service={service} headingLevel="h3" showMethodology={false} />
+            <ServiceCard service={service} headingLevel="h3" methodologyVariant="truncated" />
           </li>
         ))}
       </ul>

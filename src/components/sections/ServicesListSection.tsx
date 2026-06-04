@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { services, servicesList } from "@/content";
@@ -21,9 +22,15 @@ export function ServicesListSection() {
         aria-label={servicesList.listAriaLabel}
       >
         {services.map((service) => (
-          <li key={service.id} className="flex">
-            <ServiceCard service={service} headingLevel="h3" methodologyVariant="full" />
-          </li>
+            <li key={service.id} className="flex">
+              <Link
+                href={`/services/${service.slug}`}
+                className="flex w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"
+                aria-label={`${service.title} – részletek megtekintése`}
+              >
+                <ServiceCard service={service} headingLevel="h3" methodologyVariant="truncated" />
+              </Link>
+            </li>
         ))}
       </ul>
     </SectionWrapper>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { buildMetadata, SITE_NAME } from "@/lib/metadata";
@@ -95,19 +95,13 @@ export default async function ServiceDetailPage({ params }: Props) {
           <p className="mt-4 max-w-xl text-base text-muted-foreground">
             {serviceDetail.ctaDescription}
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8">
             <a
               href={contactInfo.phoneHref}
-              className="inline-flex items-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            >
-              {serviceDetail.ctaButton}
-            </a>
-            <Link
-              href="/#contact"
-              className="inline-flex items-center rounded-md border border-border px-6 py-3 text-sm font-semibold text-foreground hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="text-lg font-semibold text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               {contactInfo.phone}
-            </Link>
+            </a>
           </div>
         </div>
       </section>

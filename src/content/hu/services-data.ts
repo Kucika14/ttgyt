@@ -25,7 +25,7 @@ export const services: Service[] = [
   },
   {
     id: "3",
-    slug: "lagyrész-manualterapia",
+    slug: "lagyreszmanual-terapia",
     title: "Lágyrész manuálterápiás kezelések",
     shortDescription:
       "Feszes, kötött izmok és ínfájdalmak kezelése a bőrön, kötőszöveteken és izmokon végzett speciális manuális technikákkal.",

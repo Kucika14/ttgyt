@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { buildMetadata, SITE_NAME } from "@/lib/metadata";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 import { services, serviceDetail, contactInfo } from "@/content";
 
 type Props = {
@@ -39,6 +41,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd data={buildBreadcrumbSchema(service.title, service.slug)} />
       {/* Hero */}
       <section
         aria-labelledby="service-detail-heading"

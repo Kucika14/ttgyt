@@ -11,10 +11,15 @@ export function buildMetadata(overrides: Partial<Metadata>): Metadata {
   return {
     metadataBase: new URL(BASE_URL),
     applicationName: SITE_NAME,
+    robots: { index: true, follow: true },
     openGraph: {
       siteName: SITE_NAME,
       locale: "hu_HU",
       type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@tornatamas",
     },
     ...overrides,
   };

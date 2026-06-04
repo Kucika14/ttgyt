@@ -7,6 +7,37 @@
 import { contactInfo, services } from "@/content";
 import { BASE_URL } from "./metadata";
 
+/**
+ * BreadcrumbList séma egy service aloldalhoz.
+ * Megjelenik a Google találatokban: tornatamas.hu › Kezelések › McKenzie módszer
+ */
+export function buildBreadcrumbSchema(serviceTitle: string, serviceSlug: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Főoldal",
+        item: BASE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Kezelési területek",
+        item: `${BASE_URL}/services`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: serviceTitle,
+        item: `${BASE_URL}/services/${serviceSlug}`,
+      },
+    ],
+  };
+}
+
 /** LocalBusiness + MedicalBusiness séma a rendelőhöz. */
 export function buildLocalBusinessSchema() {
   return {
@@ -45,7 +76,7 @@ export function buildLocalBusinessSchema() {
               "@type": "MedicalProcedure",
               name: service.title,
               description: service.shortDescription,
-              url: `${BASE_URL}/services#${service.slug}`,
+              url: `${BASE_URL}/services/${service.slug}`,
             },
           })),
         },

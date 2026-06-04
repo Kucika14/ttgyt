@@ -26,7 +26,13 @@ export function HighlightedServicesSection() {
       >
         {featuredServices.map((service) => (
           <li key={service.id} className="flex">
-            <ServiceCard service={service} headingLevel="h3" methodologyVariant="truncated" />
+            <Link
+              href={`/services/${service.slug}`}
+              className="flex w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"
+              aria-label={`${service.title} – részletek megtekintése`}
+            >
+              <ServiceCard service={service} headingLevel="h3" methodologyVariant="truncated" />
+            </Link>
           </li>
         ))}
       </ul>

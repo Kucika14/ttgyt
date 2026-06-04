@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.ttgyt.hu";
+export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.tornatamas.hu";
 export const SITE_NAME = "TTGYT";
 
 /**

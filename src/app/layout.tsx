@@ -7,6 +7,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { buildMetadata, SITE_NAME, BASE_URL } from "@/lib/metadata";
 import { siteMetaContent } from "@/content";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { buildLocalBusinessSchema } from "@/lib/schema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +48,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="hu" className={`${geistSans.variable} h-full antialiased`}>
+      <head>
+        <JsonLd data={buildLocalBusinessSchema()} />
+      </head>
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <SkipLink />
         <Header />

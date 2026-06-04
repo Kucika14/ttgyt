@@ -8,7 +8,7 @@ export const navigation = {
   mobileMenuToggleLabel: "Navigációs menü megnyitása",
   links: [
     { href: "/", label: "Főoldal" },
-    { href: "/about", label: "Rólam" },
     { href: "/services", label: "Kezelések" },
+    { href: "/about", label: "Rólam" },
   ],
 } as const;

@@ -4,13 +4,13 @@ export const services: Service[] = [
   {
     id: "1",
     slug: "mckenzie-modszer",
-    title: "Mechanikai Diagnózis és Terápia (McKenzie módszer)",
+    title: "Mechanikai Diagnózis és Terápia (Mckenzie módszer)",
     shortDescription:
-      "Gerinc- és végtagízületi panaszok, derékfájdalom, gerincsérv és ínfájdalmak vizsgálata és kezelése az evidence-based McKenzie módszerrel.",
+      "Gerinc- és végtagízületi panaszok, derékfájdalom, gerincsérv és ínfájdalmak vizsgálata és kezelése az evidence-based Mckenzie módszerrel.",
     methodologySummary:
       "Az MDT, vagy szerzői nevén Mckenzie módszer Robin Mckenzie ausztrál gyógytornásztól származó vizsgálati és kezelési rendszer, melyet gyógytornászok széles köre használ eredményesen szerte a világon. Legtöbben a derékfájdalom és a gerincsérv kapcsán találkoznak vele, de végtagízületek és ínfájdalmak esetén is hatékonyan alkalmazható.\n\nA vizsgálat során a páciens alapos kikérdezése után a panaszok különböző terhelési stratégiákra adott reakcióit térképezzük fel, ez alapján állítjuk fel a kezelési protokollt. Az állapotfelmérést követő alkalmakon az elsődlegesen összeállított tornagyakorlatok hatását nyomon követve finomítjuk az alkalmazott tornát, amennyiben nem értük el a teljes gyógyulást.\n\nA Mckenzie módszer az önkezelésre buzdítja a pácienst, ezzel csökkentve a terapeutától való függést és hatékony eszközöket adva saját magunk kezelésére, amennyiben a panaszok a későbbiekben kiújulnának.",
-    iconAlt: "McKenzie módszer illusztráció",
-    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=McKenzie+módszer",
+    iconAlt: "Mckenzie módszer illusztráció",
+    imageSrc: "https://placehold.co/600x400/ccfbf1/0f766e?text=Mckenzie+módszer",
   },
   {
     id: "2",

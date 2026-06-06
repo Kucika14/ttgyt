@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section
       aria-label="Hero"
-      className="relative overflow-hidden bg-[oklch(0.95_0.04_196)]"
+      className="relative overflow-hidden bg-[oklch(0.95_0.04_255)]"
     >
       <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-center">

@@ -10,6 +10,7 @@ export const contactInfo = {
   phoneHref: "tel:+36302943566",
   address: "2030 Érd, Budai út 6.",
   addressNote: "Form Pilates stúdió",
+  areaServed: "Érd, Budaörs, Diósd, Törökbálint és környéke",
   mapsEmbedSrc:
     "https://maps.google.com/maps?q=2030+%C3%89rd%2C+Budai+%C3%BAt+6&t=&z=15&ie=UTF8&iwloc=&output=embed",
   streetViewHref:

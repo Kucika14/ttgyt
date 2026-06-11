@@ -42,6 +42,13 @@ export function ContactSection() {
           <p className="text-sm text-foreground">{contact.address}</p>
           <p className="text-xs text-muted-foreground">{contact.addressNote}</p>
         </div>
+
+        <div className="flex flex-col items-center gap-2 text-center sm:col-span-3">
+          <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+            {contactSection.areaLabel}
+          </span>
+          <p className="text-sm text-foreground">{contact.areaServed}</p>
+        </div>
       </address>
 
       {/* Térkép */}

@@ -7,28 +7,28 @@
 /** Root layout alapértelmezett metadata. */
 export const siteMetaContent = {
   defaultDescription:
-    "Szakszerű gyógytorna és rehabilitáció: gerinc terápia, sportrehabilitáció, manuálterápia és neurológiai kezelések. Foglaljon időpontot!",
-  ogImageAlt: "TTGYT – Gyógytornász szakrendelő",
+    "Gyógytornász Érd, Budaörs, Diósd és Törökbálint környékén – Tilly Tamás. Mckenzie módszer, Mulligan manuálterápia, lágyrész kezelés, rehabilitáció. Foglaljon időpontot!",
+  ogImageAlt: "Tilly Tamás Gyógytornász – Érd, Budaörs, Diósd, Törökbálint",
 } as const;
 
 /** Főoldal metadata. */
 export const homeMetaContent = {
   title: "Főoldal",
   description:
-    "Üdvözöljük a TTGYT gyógytornász oldalán! Személyre szabott gyógytorna kezelések – gerinc terápiától sportrehabilitációig és neurológiai kezelésekig.",
-  ogTitle: "TTGYT – Gyógytornász szakrendelő",
+    "Tilly Tamás gyógytornász – Érd, Budaörs, Diósd, Törökbálint. Mckenzie módszer, Mulligan manuálterápia, lágyrész kezelés és rehabilitáció. Személyre szabott kezelési terv.",
+  ogTitle: "Tilly Tamás Gyógytornász – Érd és környéke",
   ogDescription:
-    "Visszanyert mozgásszabadság – gerinc terápia, sportrehabilitáció, manuálterápia és neurológiai kezelések. Foglaljon időpontot!",
+    "Visszanyert mozgásszabadság – Mckenzie módszer, Mulligan manuálterápia, rehabilitáció Érd, Budaörs, Diósd és Törökbálint területén.",
 } as const;
 
 /** Szolgáltatások oldal metadata. */
 export const servicesMetaContent = {
   title: "Kezelési területek",
   description:
-    "Ismerje meg a TTGYT kezelési területeit: gerinc terápia, sportrehabilitáció, manuálterápia, posztoperatív és neurológiai rehabilitáció, artrózisos ízületek kezelése.",
-  ogTitle: "Kezelési területek | TTGYT",
+    "Gyógytornász kezelések Érd, Budaörs, Diósd és Törökbálint környékén: Mckenzie módszer, Mulligan manuálterápia, lágyrész kezelés, sérülések és műtétek utáni rehabilitáció.",
+  ogTitle: "Kezelési területek | Tilly Tamás Gyógytornász",
   ogDescription:
-    "Átfogó gyógytornász ellátás: a gerinc terápiától a neurológiai rehabilitációig – egyéni állapotfelmérés alapján.",
+    "Mckenzie módszer, Mulligan manuálterápia és rehabilitáció – egyéni állapotfelmérés alapján, Érd és környékén.",
 } as const;
 
 /** 404 oldal metadata. */

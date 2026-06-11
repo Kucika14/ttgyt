@@ -59,6 +59,12 @@ export function buildLocalBusinessSchema() {
           addressCountry: "HU",
         },
         medicalSpecialty: "https://schema.org/Physiotherapy",
+        areaServed: [
+          { "@type": "City", name: "Érd" },
+          { "@type": "City", name: "Budaörs" },
+          { "@type": "City", name: "Diósd" },
+          { "@type": "City", name: "Törökbálint" },
+        ],
         employee: {
           "@type": "Person",
           "@id": `${BASE_URL}/#person`,

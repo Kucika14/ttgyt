@@ -34,5 +34,6 @@ export const contactSection = {
   emailLabel: "E-mail",
   phoneLabel: "Telefon",
   addressLabel: "Cím",
+  areaLabel: "Ellátási terület",
   contact: contactInfo,
 };

@@ -12,5 +12,7 @@ export const footer = {
   navAriaLabel: "Lábléc navigáció",
   contactTitle: "Elérhetőség",
   contact: contactInfo,
+  facebookHref: "https://www.facebook.com/tilly.tamas.physio/",
+  facebookLabel: "Facebook oldal megtekintése",
   copyright: (year: number) => `© ${year} TTGYT. Minden jog fenntartva.`,
 };

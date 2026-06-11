@@ -1,58 +1,56 @@
-import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { contactSection } from "@/content";
 
 export function ContactSection() {
   const { contact } = contactSection;
 
   return (
-    <SectionWrapper
-      id="contact"
-      aria-label="Elérhetőség"
-      className="mx-auto w-full max-w-6xl bg-[oklch(0.95_0.04_255)] px-4 py-16 sm:px-6 sm:py-20 lg:px-8"
-    >
-      <address className="mx-auto mt-12 grid max-w-3xl gap-8 not-italic sm:grid-cols-3">
-        <div className="flex flex-col items-center gap-2 text-center">
-          <span className="text-sm font-semibold uppercase tracking-wide text-primary">
-            {contactSection.emailLabel}
-          </span>
-          <a
-            href={contact.emailHref}
-            className="text-sm text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
-          >
-            {contact.email}
-          </a>
-        </div>
+    <section id="contact" aria-label="Elérhetőség" className="w-full bg-[oklch(0.95_0.04_255)] py-16 sm:py-20">
+      {/* Kapcsolati adatok – szűkített */}
+      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        <address className="mx-auto mt-0 grid max-w-3xl gap-8 not-italic sm:grid-cols-3">
+          <div className="flex flex-col items-center gap-2 text-center">
+            <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+              {contactSection.emailLabel}
+            </span>
+            <a
+              href={contact.emailHref}
+              className="text-sm text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
+            >
+              {contact.email}
+            </a>
+          </div>
 
-        <div className="flex flex-col items-center gap-2 text-center">
-          <span className="text-sm font-semibold uppercase tracking-wide text-primary">
-            {contactSection.phoneLabel}
-          </span>
-          <a
-            href={contact.phoneHref}
-            className="text-sm text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
-          >
-            {contact.phone}
-          </a>
-        </div>
+          <div className="flex flex-col items-center gap-2 text-center">
+            <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+              {contactSection.phoneLabel}
+            </span>
+            <a
+              href={contact.phoneHref}
+              className="text-sm text-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
+            >
+              {contact.phone}
+            </a>
+          </div>
 
-        <div className="flex flex-col items-center gap-2 text-center">
-          <span className="text-sm font-semibold uppercase tracking-wide text-primary">
-            {contactSection.addressLabel}
-          </span>
-          <p className="text-sm text-foreground">{contact.address}</p>
-          <p className="text-xs text-muted-foreground">{contact.addressNote}</p>
-        </div>
+          <div className="flex flex-col items-center gap-2 text-center">
+            <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+              {contactSection.addressLabel}
+            </span>
+            <p className="text-sm text-foreground">{contact.address}</p>
+            <p className="text-xs text-muted-foreground">{contact.addressNote}</p>
+          </div>
 
-        <div className="flex flex-col items-center gap-2 text-center sm:col-span-3">
-          <span className="text-sm font-semibold uppercase tracking-wide text-primary">
-            {contactSection.areaLabel}
-          </span>
-          <p className="text-sm text-foreground">{contact.areaServed}</p>
-        </div>
-      </address>
+          <div className="flex flex-col items-center gap-2 text-center sm:col-span-3">
+            <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+              {contactSection.areaLabel}
+            </span>
+            <p className="text-sm text-foreground">{contact.areaServed}</p>
+          </div>
+        </address>
+      </div>
 
-      {/* Térkép */}
-      <div className="mx-auto mt-12 max-w-4xl overflow-hidden rounded-xl border border-border">
+      {/* Térkép – teljes szélesség */}
+      <div className="mt-12 overflow-hidden border-y border-border">
         <iframe
           title="Rendelő helyszíne – Google Maps"
           src={contact.mapsEmbedSrc}
@@ -74,6 +72,6 @@ export function ContactSection() {
           Utcakép megtekintése (Street View) →
         </a>
       </div>
-    </SectionWrapper>
+    </section>
   );
 }

@@ -6,7 +6,7 @@ import { featuredServices, highlightedServices } from "@/content";
 
 export function HighlightedServicesSection() {
   return (
-    <SectionWrapper id="services-preview" aria-labelledby="services-preview-heading" className="bg-[oklch(0.95_0.04_255)]">
+    <SectionWrapper id="services-preview" aria-labelledby="services-preview-heading">
       <div className="text-center">
         <h2
           id="services-preview-heading"

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.tornatamas.hu";
-export const SITE_NAME = "TTGYT";
+export const SITE_NAME = "Tilly Tamás Gyógytornász";
 
 /**
  * Merges page-specific metadata with site-wide defaults.
@@ -12,6 +12,9 @@ export function buildMetadata(overrides: Partial<Metadata>): Metadata {
     metadataBase: new URL(BASE_URL),
     applicationName: SITE_NAME,
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: "./",
+    },
     openGraph: {
       siteName: SITE_NAME,
       locale: "hu_HU",

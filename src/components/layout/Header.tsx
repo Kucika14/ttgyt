@@ -34,11 +34,11 @@ export function Header() {
           aria-label={navigation.logoLabel}
         >
           <Image
-            src="/logo.png"
+            src="/thumbnail_ttgyt.png"
             alt={navigation.logoLabel}
-            width={200}
-            height={120}
-            className="h-10 w-auto"
+            width={40}
+            height={40}
+            className="h-10 w-auto rounded-sm border border-transparent"
             priority
           />
         </Link>

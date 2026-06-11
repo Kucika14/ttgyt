@@ -6,23 +6,23 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[oklch(0.43_0.15_255)] bg-[oklch(0.53_0.15_255)] text-white">
+    <footer className="border-t border-[#013d8a] bg-[#0251b4] text-white">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 text-center lg:grid-cols-3 lg:text-left">
           {/* Brand */}
-          <div>
+          <div className="flex flex-col items-center lg:items-start">
             <Image
-              src="/logo.png"
+              src="/thumbnail_ttgyt.png"
               alt={footer.brand}
-              width={200}
-              height={120}
-              className="w-44 h-auto rounded-sm"
+              width={80}
+              height={80}
+              className="h-16 w-auto rounded-sm border border-transparent"
             />
             <p className="mt-3 text-sm text-white/75">{footer.tagline}</p>
           </div>
 
           {/* Navigation */}
-          <nav aria-label={footer.navAriaLabel}>
+          <nav aria-label={footer.navAriaLabel} className="flex flex-col items-center lg:items-start">
             <p className="text-sm font-semibold text-white">Navigáció</p>
             <ul className="mt-3 space-y-2" role="list">
               {navigation.links.map(({ href, label }) => (
@@ -39,7 +39,7 @@ export function Footer() {
           </nav>
 
           {/* Contact */}
-          <div>
+          <div className="flex flex-col items-center lg:items-start">
             <p className="text-sm font-semibold text-white">{footer.contactTitle}</p>
             <address className="mt-3 not-italic">
               <ul className="space-y-2 text-sm text-white/75" role="list">

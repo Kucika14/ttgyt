@@ -28,12 +28,10 @@ export const pricingSection = {
 
 /** Főoldal — Kapcsolat szekció. */
 export const contactSection = {
-  heading: "Foglaljon időpontot!",
-  description:
-    "Kérdése van, vagy időpontot szeretne foglalni? Keressen minket az alábbi elérhetőségeken – örömmel segítünk!",
   emailLabel: "E-mail",
   phoneLabel: "Telefon",
   addressLabel: "Cím",
   areaLabel: "Ellátási terület",
+  streetViewLabel: "Utcakép megtekintése (Street View) →",
   contact: contactInfo,
 };

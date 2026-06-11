@@ -19,7 +19,7 @@ export default function ServicesPage() {
       {/* Page hero */}
       <section
         aria-labelledby="services-page-heading"
-        className="bg-[rgb(221,240,255)] py-16 sm:py-20"
+        className="bg-section-alt py-16 sm:py-20"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <h1

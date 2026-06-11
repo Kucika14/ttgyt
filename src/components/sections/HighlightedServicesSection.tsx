@@ -25,7 +25,7 @@ export function HighlightedServicesSection() {
         aria-label={highlightedServices.listAriaLabel}
       >
         {featuredServices.map((service) => (
-          <li key={service.id} className="flex">
+          <li key={service.slug} className="flex">
             <Link
               href={`/services/${service.slug}`}
               className="flex w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"

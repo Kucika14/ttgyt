@@ -9,7 +9,7 @@ export const servicesPage = {
 export const servicesList = {
   heading: "Összes kezelési terület",
   description:
-    "Ismerje meg részletesen, miben segíthetünk – a gerinc terápiától a neurológiai rehabilitációig.",
+    "Ismerje meg részletesen, miben segíthetünk – a gerincproblémáktól az ízületi fájdalmak és sérülések utáni rehabilitációig.",
   listAriaLabel: "Kezelési területek listája",
 } as const;
 

@@ -12,7 +12,6 @@ export * from "./hu/layout";
 export * from "./hu/home";
 export * from "./hu/services";
 export * from "./hu/not-found";
-export * from "./hu/service-card";
 export * from "./hu/services-data";
 export * from "./hu/metadata";
 export * from "./hu/about";

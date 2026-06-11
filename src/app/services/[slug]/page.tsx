@@ -45,7 +45,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       {/* Hero */}
       <section
         aria-labelledby="service-detail-heading"
-        className="bg-[oklch(0.95_0.04_196)] py-16 sm:py-20"
+        className="bg-section-alt py-16 sm:py-20"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <Link
@@ -86,7 +86,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       {/* CTA */}
       <section
         aria-labelledby="service-cta-heading"
-        className="bg-[oklch(0.95_0.04_196)] py-16"
+        className="bg-section-alt py-16"
       >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <h2

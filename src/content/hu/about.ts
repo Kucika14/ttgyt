@@ -16,7 +16,7 @@ export const aboutMetaContent = {
   title: "Bemutatkozás",
   description:
     "Tilly Tamás gyógytornász bemutatkozása: Semmelweis Egyetem, kórházi és magánrendelői tapasztalat, saját vállalkozás 2020 óta.",
-  ogTitle: "Bemutatkozás | TTGYT",
+  ogTitle: "Bemutatkozás | Tilly Tamás Gyógytornász",
   ogDescription:
     "Tilly Tamás gyógytornász – mozgásszervi fizioterápia, ízületi és gerincproblémák, rehabilitáció Érden.",
 } as const;

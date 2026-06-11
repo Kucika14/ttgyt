@@ -21,7 +21,7 @@ export function Footer() {
 
           {/* Navigation */}
           <nav aria-label={footer.navAriaLabel} className="flex flex-col items-center lg:items-start">
-            <p className="text-sm font-semibold text-white">Navigáció</p>
+            <p className="text-sm font-semibold text-white">{footer.navHeading}</p>
             <ul className="mt-3 space-y-2" role="list">
               {navigation.links.map(({ href, label }) => (
                 <li key={href}>

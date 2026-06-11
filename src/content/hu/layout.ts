@@ -9,6 +9,7 @@ export const skipLink = {
 export const footer = {
   brand: "TTGYT",
   tagline: "Személyre szabott gyógytorna az egészségéért és mozgásszabadságáért.",
+  navHeading: "Navigáció",
   navAriaLabel: "Lábléc navigáció",
   contactTitle: "Elérhetőség",
   contact: contactInfo,
